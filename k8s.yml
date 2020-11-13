@@ -13,7 +13,7 @@ spec:
         app: hardik
     spec:
       containers:
-      - image: okteto/hello-world:python
+      - image: okteto/hardik:python
         name: hardik
 
 ---
