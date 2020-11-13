@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hardik
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hardik
+  template:
+    metadata:
+      labels:
+        app: hardik
+    spec:
+      containers:
+      - image: okteto/hello-world:python
+        name: hardik
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: hardik
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP  
+  ports:
+  - name: "hardik"
+    port: 8080
+  selector:
+    app: hardik
