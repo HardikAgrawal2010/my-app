@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Prodution
 metadata:
   name: hardik
 spec:
@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: hardik
-  template: templates
+  template: 
     metadata:
       labels:
         app: hardik
