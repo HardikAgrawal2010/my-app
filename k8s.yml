@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Prodution
+kind: Deployment
 metadata:
   name: hardik
 spec:
