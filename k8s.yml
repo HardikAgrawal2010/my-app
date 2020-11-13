@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: hardik
-  template:
+  template: templates
     metadata:
       labels:
         app: hardik
