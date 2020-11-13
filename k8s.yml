@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: /
+        app: index
     spec:
       containers:
       - image: okteto/hello-world:python
