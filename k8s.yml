@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: hardik
+        app: /
     spec:
       containers:
-      - image: okteto/hardik:python
+      - image: okteto/hello-world:python
         name: hardik
 
 ---
